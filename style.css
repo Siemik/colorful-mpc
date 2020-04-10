@@ -11,10 +11,45 @@ body {
     flex-direction: column;
     align-items: center; 
     align-content: center;
-    font-family: 'Codystar', cursive;
+    /* font-family: 'Codystar', cursive; */
 }
 .buttons-container {
-    width: 800px;
     display: flex;   
     justify-content: space-around;
+}
+.mpc {
+    width: 274px;
+    height: 194px;
+    background-image: url(mpc.png);
+}
+.mpc-frame {
+    margin: 37px 18px 25px 18px;
+    width: 238‬px;
+    height: 132px;
+    border: 1px solid green; 
+}
+.drum-buttons-section {
+    /* display: flex;
+    flex-direction: row; */
+    /* width: 128px;
+    height: 132px; */
+    /* Odjąć parddingi */
+    width: 108px;
+    height: 114px;
+    padding: 10px 9px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.drum-buttons-row-1, .drum-buttons-row-2, .drum-buttons-row-3 {
+    width: 110px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.drum-button {
+    width: 26px;
+    height: 26px;
+    background-image: url(drum-button.jpg);
+    margin: 4px;
+    flex-wrap: nowrap;
 }
