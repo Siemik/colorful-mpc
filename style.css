@@ -52,7 +52,7 @@ body {
     background-image: url(drum-button.jpg);
     margin: 4px;
     flex-wrap: nowrap;
-    transition: all .05s;
+    transition: all .07s;
 }
 .playing {
     background-image:
@@ -60,3 +60,23 @@ body {
         url(drum-button.jpg);
     transform: scale(1.0);
 }
+.circle {
+    border-radius: 50%;
+    background-color: #d4d5d9;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    z-index: -1;
+    margin-top: -52px;
+}
+.circle-playing {
+    animation: scaleIn .07s 1 cubic-bezier(.50,.50,.50,.50);
+}
+  @keyframes scaleIn {
+    from {
+      transform: scale(1, 1);
+    }
+    to {
+      transform: scale(1.5, 1.5);
+    }
+  }

@@ -1,3 +1,4 @@
+var circle = document.querySelector('.circle');
 document.addEventListener('keydown', function(e) {
     console.log(e.keyCode);
     var audio = document.querySelector('audio[data-key="' + e.keyCode +'"]');
@@ -6,11 +7,13 @@ document.addEventListener('keydown', function(e) {
     audio.currentTime = 0; //sprawia że dźwięki się nie blokują
     audio.play();
     drumButton.classList.add('playing');
+    circle.classList.add('circle-playing')
 });
 
 function removeTransition(e) {
     if (e.propertyName !== 'transform') return;
     this.classList.remove('playing');
+    circle.classList.remove('circle-playing')
 }
 
 var drumButtons = document.querySelectorAll('.drum-button');
