@@ -54,6 +54,11 @@ body {
     flex-wrap: nowrap;
     transition: all .07s;
 }
+/* Przyciski rozjerzaja sie na kosoli wiec musialem cos takiego dac :(  */
+.mpc-btn-2, .mpc-btn-5, .mpc-btn-8 {
+    margin: 4px 8px;
+}
+/* koniec tego brzydkiego kod */
 .playing {
     background-image:
         linear-gradient(rgb(141, 141, 141), rgb(141, 141, 141)), 
