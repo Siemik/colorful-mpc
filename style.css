@@ -52,4 +52,11 @@ body {
     background-image: url(drum-button.jpg);
     margin: 4px;
     flex-wrap: nowrap;
+    transition: all .05s;
+}
+.playing {
+    background-image:
+        linear-gradient(rgb(141, 141, 141), rgb(141, 141, 141)), 
+        url(drum-button.jpg);
+    transform: scale(1.0);
 }
